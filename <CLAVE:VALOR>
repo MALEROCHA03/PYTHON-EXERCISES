@@ -1,0 +1,16 @@
+#P2-Desarrollar un algoritmo que verifique si todas las parejas <clave:valor> de
+#un diccionario b se encuentran en otro diccionario a.
+#VE: da, db  son diccionarios
+#VS: bandera:bool
+da = {1: 22, 3: 44, 4: 33, 2: 11, 7: 77}
+db= { 3: 44, 4: 33, 2: 11, 0: 22}
+bandera:bool=True
+
+for llaveB in db: 
+  if llaveB not in da:
+    bandera=False
+    break
+  elif da.get(llaveB) != db.get(llaveB):
+    bandera=False
+    break
+print(bandera)
