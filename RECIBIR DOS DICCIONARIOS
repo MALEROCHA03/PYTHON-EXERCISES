@@ -1,0 +1,20 @@
+#-Desarrollar una funcion que reciba dos diccionarios como parametros
+#y los mezcle, es decir, que se construya un nuevo diccionario con las
+#items de los dos diccionarios; si hay una clave repetida en ambos
+#diccionarios, se debe asignar el valor que tenga la clave en el
+#primer diccionario.
+def mezclaDiccs(da,db):   #funcion1: (RxR)  ->  (R) param formales
+  #VE: da, db  (son diccionarios)
+  #VS:d_nue
+  d_nue = da.copy()
+  for llaveB in db:
+    if llaveB not in da: #si no esta, la debo insertar
+      valor = db.get(llaveB)
+      d_nue[llaveB] = valor #Agrego items al diccionario nuevo
+  return d_nue
+
+da = {1: 22, 3: 44, 4: 33, 2: 11, 7: 77}
+db = { 8:88, 3: 55, 9:99, 4: 33, 2: 11, 0: 0}
+dn = mezclaDiccs(da,db)#retorna d_ne     #invocacion, los parametros actuales
+print('dn:',dn) #param actuales deben coincidir con lo formales en cant, tipo y orden
+print('da',da)
