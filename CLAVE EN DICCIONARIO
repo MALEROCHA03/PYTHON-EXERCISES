@@ -1,0 +1,10 @@
+#Se accede al valor de un item a partir de su clave; si no existe genera error
+puertos = {22:"SSH", 23:"Telnet", 80:"HTTP", 3306:"MySQL"}
+valor = puertos[22]
+print(valor) 
+mi_puert=23
+#a=puertos[mi_puert];print(a)
+if mi_puert in puertos:
+  print(puertos[mi_puert])
+else:
+  print(mi_puert, 'no existe')
