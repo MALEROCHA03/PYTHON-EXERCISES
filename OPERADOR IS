@@ -1,0 +1,12 @@
+#Operador is, sirve para determinar si dos tuplas referencian al mismo objeto en mem ram
+a = ('Rojas', 123)
+b = ("Rojas", 123)
+c = ('Rojas',)
+d = (123,)
+e = c + d
+#print(a == b) #True
+#print(a is b) # False en Colab, True en repl.it
+print(a == e)#True
+print(a is e)#False
+print(id(a)) #id() retorna la dir en mem Ram donde se almacena el objeto
+print(id(b))
