@@ -1,0 +1,5 @@
+#Con dos listas, crear un diccionario  
+name = ["Mohit", "Bhaskar", "Manish"] #claves
+skill = ["Python", "Python", "Java"]  #valores
+dict1 = dict([(k,v) for k, v in zip(name, skill)]) #lista de tuplas convertido a dict()
+print(dict1)
