@@ -1,0 +1,8 @@
+#Intercambiando variables, aprovechando la  asignacion multiple
+a = 1   # tem=a; a=b; b=tem
+b = 3
+
+a, b = b, a #concepto de tupla
+print('Intercambiando variables')
+print('a =', a)
+print('b =', b)
