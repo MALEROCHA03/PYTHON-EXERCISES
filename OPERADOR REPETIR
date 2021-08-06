@@ -1,0 +1,7 @@
+#operador repetir *
+tup2 = (1, 2, 3, 4, 5)
+tup3 = tup2 * 3
+print(tup3)
+tup4 = ('Abc', 'Bcd')
+tup5 = tup4 * 2
+print(tup5)
