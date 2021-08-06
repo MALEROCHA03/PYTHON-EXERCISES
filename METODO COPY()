@@ -1,0 +1,9 @@
+#El metodo copy() se usa para copiar un diccionario.
+portO = {80:"HTTP", 23:"SMTP", 443:"HTTPS"}
+copy_port = portO.copy()
+print(id(portO))
+print(id(copy_port))
+false_copy = portO; print(id(false_copy))
+print(portO)
+print(copy_port)
+print(false_copy)
