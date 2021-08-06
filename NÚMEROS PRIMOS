@@ -1,0 +1,18 @@
+ # Para que un numero sea primo, unicamente tiene que dividirse dos veces:
+    #   1 - divisible entre 1
+    #   2 - divisible entre el mismo
+    # En este bucle, empezamos por el dos hasta un numero anterior a el, por lo
+    # que si en el bucle, alguna vez se divide el numero, quiere decir que no es
+    # primo
+import math  
+def esPrimo(num):  
+ for i in range(3,int(math.sqrt(num))+1,2):  
+  if num%i==0:  
+   return False  
+ return True  
+def listaPrimos(limite):  
+ print(2)  
+ for j in range(3,limite+1,2):  
+  if esPrimo(j):  
+   print(j)  
+listaPrimos (200)  
