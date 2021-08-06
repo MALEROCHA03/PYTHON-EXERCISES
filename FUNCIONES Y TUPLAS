@@ -1,0 +1,11 @@
+#funciones y tuplas: Retornar mas de un valor en una funcion usando el concepto de tupla.
+def minmax(a, b):
+  if a < b:
+    return (a, b) #Retorno 2 valores
+  else:
+    return b, a #Retorno 2 valores 
+
+x, y = minmax(5, 13)
+print('min =', x, ",", 'max =', y)
+x, y = minmax(12, -4)
+print('min =', x, ",", 'max =', y)
