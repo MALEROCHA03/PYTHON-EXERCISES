@@ -1,0 +1,5 @@
+#Iterando una tupla usando el ciclo for, iterar significa recorrer, visitar los componentes de una coleccion
+s = ("hola", "amigos", "mios")
+#s='cadenas'
+for palabra in s: # para cada palabra de la coleccion s, que es una tupla
+  print(palabra, end = ', ')
