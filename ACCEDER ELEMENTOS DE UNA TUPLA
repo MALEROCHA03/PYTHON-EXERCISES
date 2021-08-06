@@ -1,0 +1,6 @@
+#Accede los elementos de la tupla, usando subindices entre [], una pos negativa se considera recorrido desde el final
+avengers = ("Ironman", "Thor", "Ant-man", "Hulk")# las posiciones empiezan en [0]
+print(avengers[0])
+print(avengers[3])
+print(avengers[-1]) #recorrido de der a izq
+print(avengers[-3])
