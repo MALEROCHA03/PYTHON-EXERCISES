@@ -1,0 +1,21 @@
+#P1-Desarrollar un algoritmo que imprima de manera ascendente los
+#valores (todos del mismo tipo) de un diccionario.
+
+def ordenar(a): # ordena un arreglo
+  n=len(a)  #metodo de la burbuja
+  for i in range(n-1): # escojo un elemento a la vez y comparo contra los elementos restantes
+    for j in range(i+1,n): # hace ordenamiento en orden ascendente
+      if a[i] > a[j]: 
+        tem=a[i]; a[i]=a[j]; a[j]=tem  #intercambiar elementos
+  return a
+
+dd = {1: 22, 3: 44,  7:77, 8: 33, 2: 11, 0: 0} #VE: dd
+dnue={} #VS:dnue
+lisValores = list(dd.values())
+print('valores en orden original:',lisValores)
+listaOrden = ordenar(lisValores) #Ordena un arreglo o una lista
+for llave in listaOrden: #busqueda inversa (con el valor voy a buscar la llave)
+  for clave, valor in dd.items():
+    if valor == llave:
+      dnue[clave] = valor #agrega una entrada o item con <clave:valor>
+print('diccionario Ordenado:',dnue)
