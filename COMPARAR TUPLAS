@@ -1,0 +1,5 @@
+#comparando tuplas, orden lexicografico, operadores (<, <=, >, >=, ==, !=)
+print(('Rojzs', 123) < ('Rosaj', 123))
+print(('Rosas', 123) < ('rosas', 123))
+print(('Rosas', 123) > ('Rosas', 23))
+print(('Rosas', "123") < ('Rosas', '23'))
