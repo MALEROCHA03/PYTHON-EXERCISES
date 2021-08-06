@@ -1,0 +1,6 @@
+#funcion slice [ini,fin,inc], retorna una sub-tupla 
+avengers = ("Ironman", "Thor", "Ant-man", "Hulk")
+print(avengers[0:1+1]) #incluye elementos 0 y 1 solamente, excluye el elemento 2
+print(avengers[1:1+1])#incluye el elemento 1 solamente
+print(avengers[3:3:]) #vacio, ya que no incluye el elemento 3
+print(avengers[::-1]) #presenta en orden descendente, de dere a izq
