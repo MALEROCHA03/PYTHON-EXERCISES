@@ -1,0 +1,21 @@
+#Ejemplo-Desarrollar un programa que determine si en una tupla se encuentra
+#una cadena de caracteres con dos o mas vocales. Si la cadena existe
+#debe imprimirla y si no existe debe imprimir 'No existe'.
+def cuentaVocales(frase):
+  n=0       #Inicializo en contador de vocales en cada frase
+  tu_vocales=('a', 'e', 'i', 'o','u')  #esta coleccion es una tupla
+  for letra in tu_vocales:#se lee para letra en la coleccion de tu_vocales que es una tupla con 5 elementos
+    m =  frase.count(letra) #n = n + frase.count(letra)
+    print(letra, m, sep=':', end='\t')
+    n = n +m
+  return n
+
+tupla=("amor a roma","anita atina",'p@ssw0rd',"anula las alas a la luna", \
+"la tele letal",'@nit@') #6 elementos
+for frase in tupla: #tupla es una coleccion de 6 elementos
+  n = cuentaVocales(frase) # en cada frase cuento primero cuantas 'a' hay, luego cuantas 'e', y asi sucesivamente
+  print(n,end=' frase: ') 
+  if n>= 2:
+    print(frase)
+  else:
+    print('No existe')
