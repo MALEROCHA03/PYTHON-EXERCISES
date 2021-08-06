@@ -1,0 +1,6 @@
+#El metodo update() agrega items de un diccionario a otro
+dict_ports = {22:"SSH", 80:"Http"}
+otroDict = {53:"DNS", 443:"https"}
+print(dict_ports)
+dict_ports.update(otroDict)
+print(dict_ports)
