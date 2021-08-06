@@ -1,0 +1,18 @@
+#Una tupla es una coleccion o secuencia de elementos que puede contener datos
+#heterogeneos: enteros, reales, cadenas, listas, diccionarios u otros, inclusive tuplas. 
+#Una tupla se escribe como la secuencia de datos, entre parentesis, separados por una coma ( , ), 
+#Como las cadenas de caracteres, las tuplas son inmutables, esto es, no se pueden modicar despues de definidas.
+#Ejemplo usando parentesis
+tup = (1, 2, 3, 4.5, 'hola', 'a', True)  #Contiene enteros, flotantes, caracteres y cadenas
+#print(tup)
+#Ejemplo declaracion de una tupla, sin parentesis, secuencia de datos separados por coma
+a= 1, 2, 3    #Asignacion de tupla a una variable 
+#print(a)
+tuple1 = (0, 1, 2, 3)
+tuple2 = ('A', 'B', 'C')
+tuple3 = (tuple1, tuple2) #Tuplas que contienen tuplas internamente
+print(tuple3)
+#Accediendo a componentes de una tupla, uso de su posicion entre [pos]
+#print(tuple3[0])
+print(tuple3[1])
+print(tuple3[1][0]) #tupla 1, elemento 0
