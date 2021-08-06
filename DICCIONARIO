@@ -1,0 +1,9 @@
+#cada pareja <clave:valor> en un diccionario se considera un item o registro
+d1={22:'SSH', 23:'Telnet', 80:'HTTP', 3306:'MySQL'}; print(d1)
+d2={"edad":40, "genero":'Masculino',"nombre":'Juan Salvador', "apellido":'Gaviota'};print(d2)
+d3={"producto":'Leche', "presentacion":[900,1100,1300]};print(d3)
+d4={'compania':'La Gallina Saraviada',"precio":{"grande":23000, "mediana":18000, "pequena":12000}};print(d4)
+d5={12100100:"Juan Maria de los Santos"};print(d5)
+d6={'primos':[2, 3, 5, 7, 11, 13, 17, 19]};print(d6)
+d7={(3, 5, 7):105};print(d7)
+a =d7.get((3, 5, 7));  print(a)
