@@ -1,0 +1,9 @@
+#asignado multiples variables
+tupla = 1, -2, 5, 3
+print(len(tupla))
+
+a, b, c, d = tupla #Note!!, una variable por cada elemento de la tupla
+print('a =', a, end='; ')
+print('b =', b,end='; ')
+print('c =', c,end='; ')
+print('d =', d,end='; ')
