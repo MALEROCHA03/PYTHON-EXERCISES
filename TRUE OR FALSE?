@@ -1,0 +1,7 @@
+//SHARE THE ASWER WITH ME😀
+
+
+
+A= ("P"*2) * 3
+B= ("P"*3) * 2
+print (A==B)
